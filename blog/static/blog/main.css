@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(67deg, rgba(149,2,67,0.7232142857142857) 4%, rgba(238,137,249,1) 88%);
+}
+nav{
+    margin: 0 auto;
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+ul{
+    gap: 1rem;
+}
+li{
+    font-size: 1.3rem;
+}
+li a{
+    color: white;
+}
