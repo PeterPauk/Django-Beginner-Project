@@ -4,7 +4,7 @@ posts = [
     {
         'author' : 'PeterPauk',
         'title' : 'The Industrial Revolution',
-        'content' : 'Kinda bad ngl',
+        'content' : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic debitis laboriosam illo at iusto ducimus, atque, blanditiis sit quisquam rerum quidem dolorum provident commodi nisi consequuntur ex vel recusandae pariatur.',
         'date_posted' : '29. August 2023'
     },
 
