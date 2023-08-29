@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 header{
-    background: linear-gradient(67deg, rgba(149,2,67,0.7232142857142857) 4%, rgba(238,137,249,1) 88%);
+    background-color: rgb(80, 182, 232);
 }
 nav{
     margin: 0 auto;
 }
 .navbar-brand{
     font-size: 2rem;
+}
+body{
+    background-color: rgb(255, 244, 244);
 }
 ul{
     gap: 1rem;
@@ -20,4 +23,12 @@ li{
 }
 li a{
     color: white;
+}
+.blog-grid{
+display: grid;
+gap: 2rem;
+}
+.blog-post{
+    background-color: white;
+    width: 400px;
 }
