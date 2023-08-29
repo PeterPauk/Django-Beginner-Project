@@ -1,7 +1,4 @@
-$blue: rgb(80, 182, 232);
-$bg-color: rgb(234, 234, 234);
-$grey : rgb(179, 179, 179);
-
+@import "./variables";
 *{
     margin: 0;
     padding: 0;
@@ -9,9 +6,6 @@ $grey : rgb(179, 179, 179);
 }
 header{
     background-color: $blue;
-}
-nav{
-    margin: 0 auto;
 }
 .navbar-brand{
     font-size: 2rem;
@@ -26,6 +20,11 @@ li{
     font-size: 1.3rem;
     a{
         color: white;
+        transition: 0.4s;
+    }
+    &:hover{
+        text-decoration: underline;
+        text-decoration-color: white;
     }
 }
 .blog-grid{
@@ -39,6 +38,10 @@ li{
         padding: 1rem;
         border: 2px solid $grey;
         overflow: hidden;
+        transition: 0.5s;
+        &:hover{
+            border: 2px solid $blue;
+        }
         div{
             display: flex;
             flex-direction: row;
@@ -59,4 +62,8 @@ li{
             bottom: 15px;
         }
     }
+footer{
+    text-align: center;
+    background-color: white
+}
 

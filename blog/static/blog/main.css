@@ -8,10 +8,6 @@ header {
   background-color: rgb(80, 182, 232);
 }
 
-nav {
-  margin: 0 auto;
-}
-
 .navbar-brand {
   font-size: 2rem;
 }
@@ -29,6 +25,11 @@ li {
 }
 li a {
   color: white;
+  transition: 0.4s;
+}
+li:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .blog-grid {
@@ -43,6 +44,10 @@ li a {
   padding: 1rem;
   border: 2px solid rgb(179, 179, 179);
   overflow: hidden;
+  transition: 0.5s;
+}
+.blog-grid .blog-post:hover {
+  border: 2px solid rgb(80, 182, 232);
 }
 .blog-grid .blog-post div {
   display: flex;
@@ -61,4 +66,9 @@ li a {
   margin-block-start: 0;
   position: relative;
   bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
 }
