@@ -36,6 +36,8 @@ li:hover {
   display: grid;
   gap: 2rem;
   grid-template-columns: 400px 400px;
+  margin: 0 auto;
+  width: 900px;
 }
 .blog-grid .blog-post {
   background-color: white;
@@ -47,6 +49,7 @@ li:hover {
 }
 .blog-grid .blog-post:hover {
   border: 2px solid rgb(80, 182, 232);
+  transform: scaleY();
 }
 .blog-grid .blog-post div {
   display: flex;
@@ -69,5 +72,6 @@ li:hover {
 @media only screen and (max-width: 992px) {
   .blog-grid {
     grid-template-columns: 200px;
+    width: 400px;
   }
 }

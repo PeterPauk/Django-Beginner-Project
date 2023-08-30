@@ -31,6 +31,8 @@ li{
     display: grid;
     gap: 2rem;
     grid-template-columns: 400px 400px;
+    margin: 0 auto;
+    width: 900px;
     .blog-post{
         background-color: white;
         width: 400px;
@@ -40,6 +42,7 @@ li{
         transition: 0.5s;
         &:hover{
             border: 2px solid $blue;
+            transform: scaleY();
         }
         div{
             display: flex;
@@ -63,5 +66,6 @@ li{
 @media only screen and (max-width: 992px){
     .blog-grid{
         grid-template-columns: 200px;
+        width: 400px;
     }
 }
