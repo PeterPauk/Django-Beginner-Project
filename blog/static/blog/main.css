@@ -40,7 +40,6 @@ li:hover {
 .blog-grid .blog-post {
   background-color: white;
   width: 400px;
-  height: 300px;
   padding: 1rem;
   border: 2px solid rgb(179, 179, 179);
   overflow: hidden;
@@ -58,7 +57,6 @@ li:hover {
   margin-right: 0;
 }
 .blog-grid .blog-post h3 {
-  text-align: center;
   margin-bottom: 1.4rem;
 }
 .blog-grid hr {
@@ -68,7 +66,8 @@ li:hover {
   bottom: 15px;
 }
 
-footer {
-  text-align: center;
-  background-color: white;
+@media only screen and (max-width: 992px) {
+  .blog-grid {
+    grid-template-columns: 200px;
+  }
 }
