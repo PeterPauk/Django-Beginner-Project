@@ -7,6 +7,17 @@
 header {
   background-color: rgb(80, 182, 232);
 }
+header li {
+  font-size: 1.3rem;
+}
+header li a {
+  color: white;
+  transition: 0.4s;
+}
+header li:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
 
 .navbar-brand {
   font-size: 2rem;
@@ -18,18 +29,6 @@ body {
 
 ul {
   gap: 1rem;
-}
-
-li {
-  font-size: 1.3rem;
-}
-li a {
-  color: white;
-  transition: 0.4s;
-}
-li:hover {
-  text-decoration: underline;
-  text-decoration-color: white;
 }
 
 .blog-grid {
@@ -74,4 +73,11 @@ li:hover {
     grid-template-columns: 200px;
     width: 400px;
   }
+}
+form {
+  background-color: white;
+  max-width: 44rem;
+  margin: 4rem auto;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(179, 179, 179);
 }

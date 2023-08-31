@@ -6,6 +6,17 @@
 }
 header{
     background-color: $blue;
+    li{
+        font-size: 1.3rem;
+        a{
+            color: white;
+            transition: 0.4s;
+        }
+        &:hover{
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+    }
 }
 .navbar-brand{
     font-size: 2rem;
@@ -16,17 +27,7 @@ body{
 ul{
     gap: 1rem;
 }
-li{
-    font-size: 1.3rem;
-    a{
-        color: white;
-        transition: 0.4s;
-    }
-    &:hover{
-        text-decoration: underline;
-        text-decoration-color: white;
-    }
-}
+
 .blog-grid{
     display: grid;
     gap: 2rem;
@@ -68,4 +69,12 @@ li{
         grid-template-columns: 200px;
         width: 400px;
     }
+}
+form{
+    background-color: white;
+    max-width: 44rem;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border: 2px solid $grey;
+    
 }
