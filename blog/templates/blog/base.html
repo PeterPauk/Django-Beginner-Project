@@ -34,12 +34,18 @@
                 <li class="nav-item">
                   <a class="nav-link text-white" href="{% url 'blog-about'%}">About</a>
                 </li>
-
               </ul>
             </div>
           </nav>
     </header>
     <main>
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-{{message.tags}}">
+              {{message}}
+            </div>
+          {% endfor %}
+        {% endif %}
         {% block content %}{% endblock %}
     </main>
     <script

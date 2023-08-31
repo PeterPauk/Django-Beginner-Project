@@ -81,3 +81,6 @@ form {
   padding: 1rem 2rem;
   border: 2px solid rgb(179, 179, 179);
 }
+form li {
+  margin-left: 1rem;
+}
