@@ -36,7 +36,7 @@ ul {
   gap: 2rem;
   grid-template-columns: 400px 400px;
   margin: 0 auto;
-  width: 900px;
+  width: 832px;
 }
 .blog-grid .blog-post {
   background-color: white;
