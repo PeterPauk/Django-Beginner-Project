@@ -1,4 +1,13 @@
 @import "./variables";
+
+@mixin content($bgColor, $margin, $padding, $width){
+    background-color: $bgColor;
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+    border: 2px solid $grey
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +36,6 @@ body{
 ul{
     gap: 1rem;
 }
-
 .blog-grid{
     display: grid;
     gap: 2rem;
@@ -35,10 +43,7 @@ ul{
     margin: 0 auto;
     width: 832px;
     .blog-post{
-        background-color: white;
-        width: 400px;
-        padding: 1rem;
-        border: 2px solid $grey;
+        @include content(white, 0, 1rem, 400px);
         overflow: hidden;
         transition: 0.5s;
         &:hover{
@@ -71,12 +76,21 @@ ul{
     }
 }
 form{
-    background-color: white;
-    max-width: 44rem;
-    margin: 4rem auto;
-    padding: 1rem 2rem;
-    border: 2px solid $grey;
+    @include content(white,4rem auto, 1rem 2rem, 44rem);
     li{
         margin-left: 1rem;
     }
+}
+.profile{
+    @include content(white, 1rem auto, 2rem, 60rem,);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 30rem;
+    img{
+        width: 15rem;
+    }
+}
+.media-body{
+    position: relative;
+    left: 10rem;
 }

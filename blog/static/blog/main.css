@@ -40,8 +40,9 @@ ul {
 }
 .blog-grid .blog-post {
   background-color: white;
-  width: 400px;
+  margin: 0;
   padding: 1rem;
+  width: 400px;
   border: 2px solid rgb(179, 179, 179);
   overflow: hidden;
   transition: 0.5s;
@@ -76,11 +77,30 @@ ul {
 }
 form {
   background-color: white;
-  max-width: 44rem;
   margin: 4rem auto;
   padding: 1rem 2rem;
+  width: 44rem;
   border: 2px solid rgb(179, 179, 179);
 }
 form li {
   margin-left: 1rem;
+}
+
+.profile {
+  background-color: white;
+  margin: 1rem auto;
+  padding: 2rem;
+  width: 60rem;
+  border: 2px solid rgb(179, 179, 179);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 30rem;
+}
+.profile img {
+  width: 15rem;
+}
+
+.media-body {
+  position: relative;
+  left: 10rem;
 }
